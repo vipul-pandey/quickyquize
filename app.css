@@ -1,0 +1,98 @@
+
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-size: 55%;
+}
+
+/* UTILITIES */
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.container > * {
+  width: 100%;
+}
+#game , #home,#end, #highScores{
+    background-color: brown;
+    border-radius: 20px;
+    padding: 20px; 
+  }
+#home,#end, #highScores{
+  width: 450px;
+  height: 400px;
+}
+.hidden{
+  display: none;
+}
+#home h1{
+  font-size: 50px;
+  font-weight: 700;
+  color: rgba(332,234,54,73);
+}
+.hud-prefix, .hud-main-text{
+  font-size: 30px;
+  font-weight: 600;
+  color: rgba(256,43,123,289);
+}
+/* BUTTONS */
+.button {
+  font-size: 16px;
+  padding: 12px 0;
+  width: 160px;
+  text-align: center;
+  border: 0.1rem solid #56a5eb;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: #56a5eb;
+  background-color: white;
+  bo
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+.button[disabled]:hover {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+#end #finalScore{
+  color: rgba(234,73,242,65);
+  font-size: 40px;
+  font-weight: 700;
+}
+
+form input {
+  margin-bottom:12px;
+  width: 152px;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+}
+
+input::placeholder {
+  color: #aaa;
+}

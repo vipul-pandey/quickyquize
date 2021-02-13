@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Congrats!</title>
+    <link rel="stylesheet" href="app.css" />
+      <!-- bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate/animate.css">
+  </head>
+  <body style="background-color: red">
+    <div class="container">
+      <div id="end" class="d-flex flex-column justify-content-center align-items-center animated zoomIn">s
+        <h1 id="finalScore"></h1>
+        <form class="d-flex flex-column justify-content-center align-items-center">
+          <input type="text" name="username" id="username"placeholder="username"/>
+          <button
+            type="submit" class="button" id="saveScoreBtn" onclick="saveHighScore(event)"disabled> Save
+          </button>
+        
+         <a class="button" href="game.html">Play Again</a>
+         <a class="button" href="index.html">Go Home</a></form>
+      </div>
+    </div>
+    <script src="end.js"></script>
+  </body>
+</html>
